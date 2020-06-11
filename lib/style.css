@@ -377,6 +377,7 @@ nav {
 .mail, .register-button {
   display: inline-block;
   border-radius: 3px;
+  transition: all 0.2s;
 }
 
 .mail {
@@ -396,10 +397,11 @@ nav {
   margin-right: 0;
 }
 
-.mail:focus {
+.mail:hover, .mail:focus {
   border-color: var(--main-black-color);
 }
 
+.mail:hover ~ .register-button,
 .mail:focus ~ .register-button {
   background-color: var(--main-black-color);
 }
