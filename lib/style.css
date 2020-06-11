@@ -27,6 +27,9 @@ h2 {
   align-items: center;
   outline: none;
   transition: opacity 0.2s;
+  height: 100%;
+  width: 60px;
+  margin-left: 50px;
 }
 
 .page-logo:hover {
@@ -39,9 +42,6 @@ h2 {
 
 nav {
   position: fixed;
-  display: flex;
-  align-items: center;
-  justify-content: space-around;
   background-color: var(--main-black-color);
   color: white;
   height: var(--nav-bar-height);
@@ -50,12 +50,16 @@ nav {
 }
 
 .nav-links {
+  position: absolute;
   display: flex;
-  justify-content: space-around;
   align-items: center;
-  width: 40vw;
-  height: var(--nav-bar-height);
-  padding-left: 50%;
+  top: 0;
+  right: 20px;
+}
+
+.nav-link {
+  width: 100%;
+  margin-right: 50px;
 }
 
 .underline-content {
@@ -72,21 +76,15 @@ nav {
 .underline {
   position: absolute;
   width: 0%;
-  height: 8px;
+  height: 6px;
   bottom: 0;
   background-color: white;
   transition: width 0.3s;
-}
-
-.nav-link {
-  position: relative;
-  display: inline-block;
-  color: white;
-  text-decoration: none;
+  border-radius: 2px;
 }
 
 .underline-content:hover .underline {
-    width: 100%;
+  width: 100%;
 }
 
 .dropdown {
@@ -102,6 +100,8 @@ nav {
   color: white;
   background-color: transparent;
   border: none;
+  padding: 0;
+  margin-left: 0;
 }
 
 .dropdown-content {
@@ -110,7 +110,6 @@ nav {
   text-align: right;
   width: 100%;
   top: var(--nav-bar-height);
-  right: 0;
 }
 
 .dropdown-content a {
@@ -118,7 +117,7 @@ nav {
   text-decoration: none;
   color: inherit;
   background-color: var(--main-black-color);
-  padding: 30px 10px;
+  padding: 30px 15px;
 }
 
 .dropdown-content a:hover {background-color: darkgray;}
