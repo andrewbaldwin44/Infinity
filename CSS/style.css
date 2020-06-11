@@ -26,6 +26,11 @@ h2 {
   display: flex;
   align-items: center;
   outline: none;
+  transition: opacity 0.2s;
+}
+
+.page-logo:hover {
+  opacity: 0.6;
 }
 
 .logo {
@@ -255,6 +260,7 @@ nav {
   padding: 0 20px;
   padding-top: 15px;
   margin: -10vh 3vw;
+  transform-origin: center right;
 }
 
 .animated-box h4 {
@@ -267,6 +273,30 @@ nav {
   padding-bottom: 30px;
 }
 
+.animated-box:hover {
+  animation-name: box-flip;
+  animation-fill-mode: forwards;
+  animation-duration: 5s;
+}
+
+@keyframes box-flip {
+  43% {
+    transform: rotate(180deg);
+  }
+
+  50% {
+    transform: rotate(180deg) scale(1);
+  }
+
+  70% {
+    transform: rotate(180deg) scale(0.9);
+  }
+
+  75% {
+    transform: rotate(180deg) scale(0); translate(30vw);
+  }
+}
+
 .gallery {
   display: flex;
   flex-wrap: wrap;
@@ -275,7 +305,7 @@ nav {
 
 .gallery .image-zoom {
   width: calc(100% / 3);
-  height: 30vh;
+  height: 38vh;
 }
 
 .tile, .hover-text, .overlay {
@@ -317,7 +347,7 @@ nav {
 }
 
 .image-zoom .tile ~ .overlay:hover {
-  background: rgba(0, 0, 0, 0.2);
+  background: rgba(0, 0, 0, 0.4);
 }
 
 .image-zoom .tile ~ .overlay:hover > .hover-text {
