@@ -8,7 +8,6 @@ html {
 }
 
 body {
-  margin: 0;
   font-family: Poppins, sans-serif;
   font-size: 24px;
   font-weight: bold;
@@ -138,7 +137,6 @@ nav {
   border: 6px solid white;
   width: 80vw;
   height: 40vh;
-  margin: auto auto;
   transform: translate(-50%, -50%);
 }
 
@@ -159,13 +157,14 @@ nav {
 }
 .main-text-right h2 {
   border-bottom: 2px dotted white;
-  margin-top: 20px;
-  padding-bottom: 10px;
+  margin-top: 5%;
+  margin-bottom: 4%;
+  padding-bottom: 2%;
 }
 
 .text-grid {
   display: flex;
-  font-size: 1rem;
+  font-size: 1.1rem;
 }
 
 .text-grid p:not(:last-child) {
@@ -176,12 +175,13 @@ nav {
   display: flex;
   justify-content: space-around;
   background: white;
-  margin: 50px 0;
+  margin: 10vh 0;
 }
 
 .feature {
   display: grid;
-  grid-template-rows: 0.1fr 0.1fr 1fr 0.2fr;
+  grid-template-rows: 50px 40px 200px;
+  grid-row-gap: 30px;
   text-align: center;
   width: 20%;
   box-shadow: 0 0 10px 1px gray;
@@ -208,34 +208,48 @@ nav {
 }
 
 .text-container {
+  box-sizing: border-box;
   color: white;
-  height: 40vh;
-  padding: 40px 30px;
+  height: 65vh;
+  padding-top: 40px;
 }
 
-.sub-text {
+.text-container-text {
+  line-height: 1.8;
+  margin-top: 5vh;
+}
+
+.sub-text-container, .animated-box {
+  padding-left: 40px;
+}
+
+.sub-text-container {
   background-color: var(--main-black-color);
+  padding-top: 60px;
 }
 
-.gradient {
+.gradient-container {
   text-align: right;
   background-image: linear-gradient(90deg, white 8%, #039be5);
+  padding-right: 40px
 }
 
 .animated-box {
-  line-height: 0.8;
   position: absolute;
+  line-height: 1.5;
   background-color: var(--main-black-color);
-  border: 10px solid white;
+  border: 8px solid white;
   color: white;
   width: 15vw;
   text-align: center;
   padding: 0 20px;
+  padding-top: 15px;
   margin: -10vh 3vw;
 }
 
 .animated-box h4 {
   color: red;
+  padding-bottom: 15px;
 }
 
 .animated-box p {
