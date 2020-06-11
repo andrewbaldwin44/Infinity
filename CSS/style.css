@@ -370,7 +370,7 @@ nav {
   border-bottom: 2px solid #E0E0E0;
 }
 
-.email-area {
+.mail-area {
   display: flex;
 }
 
@@ -394,6 +394,14 @@ nav {
   height: 40px;
   margin-left: -50px;
   margin-right: 0;
+}
+
+.mail:focus {
+  border-color: var(--main-black-color);
+}
+
+.mail:focus ~ .register-button {
+  background-color: var(--main-black-color);
 }
 
 footer {
