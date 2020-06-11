@@ -1,1 +1,118 @@
-/* CSS here :) */
+body {
+  margin: 0;
+  font-family: Poppins, sans-serif;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #2E2E2E;
+  color: white;
+}
+
+.infinity-logo {
+  width: 50px;
+  padding-left: 20px;
+}
+
+.nav-links {
+  display: flex;
+  justify-content: space-around;
+  width: 40vw;
+}
+
+.nav-links a {
+  color: white;
+  text-decoration: none;
+  outline: none;
+}
+
+.rocket-bg {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100vw;
+  height: calc(100vh - 50px);
+}
+
+.main-text-container {
+  display: flex;
+  position: absolute;
+  color: white;
+  top: 50%;
+  left: 50%;
+  border: 6px solid white;
+  width: 80vw;
+  height: 40vh;
+  margin: auto auto;
+  transform: translate(-50%, -50%);
+}
+
+h1 {
+  font-size: 52px;
+}
+
+.main-text-left {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+.main-text-right {
+  background-color: rgba(107, 107, 98, 0.6);
+}
+
+h2, .text-grid {
+  margin: 0 auto;
+  width: 92%;
+}
+
+h2 {
+  border-bottom: 2px dotted white;
+  margin-top: 20px;
+  padding-bottom: 10px;
+}
+
+.text-grid {
+  display: flex;
+  font-size: 16px;
+}
+
+.features {
+  display: flex;
+  justify-content: space-around;
+  background: white;
+  margin: 50px 0;
+}
+
+.feature {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+  width: 20%;
+  box-shadow: 0 0 10px 1px gray;
+  margin: 20px 0;
+  padding: 20px 15px;
+  border-radius: 7px;
+}
+
+.feature-logo {
+  width: 50px;
+}
+
+.feature-text {
+  color: gray;
+}
+
+.feature-button {
+  font-size: inherit;
+  background-color: #2E2E2E;
+  color: white;
+  height: 50px;
+  border-radius: 5px;
+  width: 100%;
+}
