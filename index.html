@@ -11,10 +11,17 @@
     <nav>
       <img src="imgs/logo.svg" alt="infinity" class="logo"\>
       <div class="nav-links">
-        <a href="#" alt="features">Features</a>
-        <a href="#" alt="advantages">Advantages</a>
-        <a href="#" alt="gallery">Gallery</a>
-        <a href="#" alt="products">Products</a>
+        <a href="#features" alt="features" class="nav-link">Features</a>
+        <a href="#advantages" alt="advantages" class="nav-link">Advantages</a>
+        <a href="#gallery" alt="gallery" class="nav-link">Gallery</a>
+        <div class="dropdown">
+          <button class="dropdown-button nav-link">Products</button>
+          <div class="dropdown-content">
+            <a href="#">Link 1</a>
+            <a href="#">Link 2</a>
+            <a href="#">Link 3</a>
+          </div>
+        </div>
       </div>
     </nav>
     <section class="main-container">
@@ -50,7 +57,7 @@
         </div>
       </section>
     </section>
-    <section class="features">
+    <section class="features" id="features">
       <div class="feature">
         <img src="imgs/icon1.svg" alt="checkmark" class="logo"\>
         <h3>Amazing feature 1</h3>
@@ -81,7 +88,7 @@
         <button class="feature-button">Do it</button>
       </div>
     </section>
-    <section class="sub-text text-container">
+    <section class="sub-text text-container" id="advantages">
       <h2>Some cool text</h2>
       <p>
         Lorem ipsum dolor sit amet, consectetur adipiscing elit,
@@ -101,7 +108,7 @@
         Lorem ipsum?
       </p>
     </section>
-    <section class="image-tiles">
+    <section class="gallery" id="gallery">
       <table class="tiles">
         <tr>
           <td>
@@ -133,7 +140,7 @@
           Register to our mailing list:
         </label>
         <div class="email-area">
-          <input name="mail" id="mail" class="mail" type="text"></input>
+          <input name="mail" id="mail" class="mail" type="email"></input>
           <button class="register-button">
             <img src="imgs/send.svg" alt="send"></img>
           </button>
