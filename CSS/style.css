@@ -30,7 +30,7 @@ h2 {
 }
 
 .logo {
-  width: 50px;
+  width: 60px;
 }
 
 nav {
@@ -48,25 +48,47 @@ nav {
 .nav-links {
   display: flex;
   justify-content: space-around;
+  align-items: center;
   width: 40vw;
-  height: 70px;
+  height: var(--nav-bar-height);
   padding-left: 50%;
 }
 
-.nav-link {
-  color: white;
-  text-decoration: none;
-  outline: none;
-  padding: 15px;
+.underline-content {
+  position: relative;
 }
 
-.nav-link:hover {
-  border-bottom: 5px solid white;
+.underline-content .nav-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: var(--nav-bar-height);
+}
+
+.underline {
+  position: absolute;
+  width: 0%;
+  height: 8px;
+  bottom: 0;
+  background-color: white;
+  transition: width 0.3s;
+}
+
+.nav-link {
+  position: relative;
+  display: inline-block;
+  color: white;
+  text-decoration: none;
+}
+
+.underline-content:hover .underline {
+    width: 100%;
 }
 
 .dropdown {
   position: relative;
   display: inline-block;
+  height: var(--header-height);
 }
 
 .dropdown-button {
@@ -82,9 +104,9 @@ nav {
   display: none;
   position: absolute;
   text-align: right;
-  min-width: 140px;
-  right: 1px;
-  z-index: -1;
+  width: 100%;
+  top: var(--nav-bar-height);
+  right: 0;
 }
 
 .dropdown-content a {
@@ -92,7 +114,7 @@ nav {
   text-decoration: none;
   color: inherit;
   background-color: var(--main-black-color);
-  padding: 10px 10px;
+  padding: 30px 10px;
 }
 
 .dropdown-content a:hover {background-color: darkgray;}
