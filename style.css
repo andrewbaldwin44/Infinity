@@ -145,13 +145,14 @@ nav {
 }
 
 .animated-box {
+  line-height: 0.8;
   position: absolute;
   background-color: var(--main-black-color);
-  border: 8px solid white;
+  border: 10px solid white;
   color: white;
   width: 15vw;
   text-align: center;
-  padding: 5px 20px;
+  padding: 0 20px;
   margin: -10vh 3vw;
 }
 
@@ -161,17 +162,87 @@ nav {
 
 .animated-box p {
   font-size: 1rem;
+  padding-bottom: 30px;
 }
 
 .tiles {
   border-collapse: collapse;
+  margin: 0;
+  padding: 0;
   width: 100%;
 }
 
-.tiles img {
-  display: block;
-  height: 20vw;
-  width: 33vw;
+.tiles tr {
   margin: 0;
   padding: 0;
+}
+
+.tiles img {
+  height: 20vw;
+  width: 30vw;
+
+  margin: 0;
+  padding: 0;
+}
+
+.register, footer {
+  display: flex;
+  height: 25vh;
+  line-height: 2.5;
+}
+
+.register {
+  font-weight: lighter;
+  color: gray;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: left;
+  border-bottom: 2px solid #E0E0E0;
+}
+
+.email-area {
+  display: flex;
+}
+
+.mail, .register-button {
+  display: inline-block;
+  border-radius: 3px;
+}
+
+.mail {
+  font-size: inherit;
+  border: 2px solid darkgray;
+  padding-right: 45px;
+  height: 35px;
+  width: 85%;
+}
+
+.register-button {
+  background-color: darkgray;
+  border: none;
+  width: 50px;
+  height: 40px;
+  margin-left: -50px;
+  margin-right: 0;
+}
+
+.confirmation-label {
+  padding-left: 10px;
+}
+
+footer {
+  justify-content: space-around;
+}
+
+footer div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+footer a {
+  font-size: 0.8em;
+  text-decoration: none;
+  color: gray;
 }
