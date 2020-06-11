@@ -4,12 +4,15 @@
     <meta charset="utf-8" name="viewport"
           content="width=device-width, initial-scale=1.0"/>
     <link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet"/>
-    <link href="style.css" rel="stylesheet"/>
+    <link href="CSS/style.css" rel="stylesheet"/>
+    <link href="CSS/checkbox.css" rel="stylesheet"/>
     <title>Infinity</title>
   </head>
   <body>
     <nav>
-      <img src="imgs/logo.svg" alt="infinity" class="logo"\>
+      <a href="#main-page" alt="page logo" class="page-logo">
+        <img src="imgs/logo.svg" alt="infinity" class="logo"\>
+      </a>
       <div class="nav-links">
         <a href="#features" alt="features" class="nav-link">Features</a>
         <a href="#advantages" alt="advantages" class="nav-link">Advantages</a>
@@ -17,14 +20,14 @@
         <div class="dropdown">
           <button class="dropdown-button nav-link">Products</button>
           <div class="dropdown-content">
-            <a href="#">Link 1</a>
-            <a href="#">Link 2</a>
-            <a href="#">Link 3</a>
+            <a href="https://www.spacex.com/vehicles/falcon-9/" target="_blank">Falcon 9</a>
+            <a href="https://www.tesla.com/models" target="_blank">Model S</a>
+            <a href="https://www.apple.com/iphone/" target="_blank">iPhone</a>
           </div>
         </div>
       </div>
     </nav>
-    <section class="main-container">
+    <section class="main-container" id="main-page">
       <img src="imgs/bg.jpg" alt="rocket" class="rocket-bg"\>
       <section class="main-text-container">
         <div class="main-text-left">
@@ -109,33 +112,15 @@
       </p>
     </section>
     <section class="gallery" id="gallery">
-      <table class="tiles">
-        <tr>
-          <td>
-            <img src="imgs/tesla.jpg" alt="tesla" class="tile"\>
-          </td>
-          <td>
-            <img src="imgs/procat.jpg" alt="pro cat" class="tile"\>
-          </td>
-          <td>
-            <img src="imgs/hyperloop.jpg" alt="hyperloop" class="tile"\>
-          </td>
-        </tr>
-        <tr>
-          <td>
-            <img src="imgs/sneakycat.jpg" alt="sneakycat" class="tile"\>
-          </td>
-          <td>
-            <img src="imgs/bfr.jpeg" alt="bfr" class="tile"\>
-          </td>
-          <td>
-            <img src="imgs/funnycat.jpg" alt="funny cat" class="tile"\>
-          </td>
-        </tr>
-      </table>
+      <img src="imgs/tesla.jpg" alt="tesla" class="tile"\>
+      <img src="imgs/procat.jpg" alt="pro cat" class="tile"\>
+      <img src="imgs/hyperloop.jpg" alt="hyperloop" class="tile"\>
+      <img src="imgs/sneakycat.jpg" alt="sneakycat" class="tile"\>
+      <img src="imgs/bfr.jpeg" alt="bfr" class="tile"\>
+      <img src="imgs/funnycat.jpg" alt="funny cat" class="tile"\>
     </section>
     <form class="register">
-      <div>
+      <div class="align-right">
         <label for="mail">
           Register to our mailing list:
         </label>
@@ -146,8 +131,9 @@
           </button>
         </div>
         <div class="confirmation-area">
-          <input type="checkbox" id="mail-confirmation" class="mail-confirmation"></input>
           <label for="mail-confirmation" class="confirmation-label">
+          <input type="checkbox" id="mail-confirmation" class="mail-confirmation"></input>
+          <span class="checkbox"></span>
             Send me daily cat images
           </label>
         </div>
