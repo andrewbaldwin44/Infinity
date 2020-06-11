@@ -232,32 +232,51 @@ nav {
   height: 30vh;
 }
 
+.tile, .hover-text, .overlay {
+  transition: .5s ease;
+}
+
 .image-zoom {
   overflow: hidden;
+  position: relative;
 }
 
 .tile {
   width: 100%;
   height: 100%;
-  transition: transform .5s ease;
 }
 
-.tile:hover {
+.overlay {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  background-color: none;
+}
+
+.hover-text {
+  color: white;
+  font-size: 2.2rem;
+  opacity: 0;
+}
+
+.image-zoom:hover .tile {
   transform: scale(1.2);
 }
 
-.image-zoom span {
-  position: relative;
-  bottom:30px;
-  left: 0px;
-  visibility:hidden;
+.image-zoom .tile ~ .overlay:hover {
+  background: rgba(0, 0, 0, 0.2);
 }
 
-.image-zoom:hover span {
-  visibility: visible;
+.image-zoom .tile ~ .overlay:hover > .hover-text {
+  opacity: 0.8;
 }
-
-
 
 .register, footer {
   display: flex;
