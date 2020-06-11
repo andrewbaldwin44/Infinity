@@ -199,12 +199,22 @@ nav {
 }
 
 .feature-button {
+  padding: 0;
+  margin: 0;
   font-size: inherit;
   background-color: var(--main-black-color);
   color: white;
   height: 50px;
   border-radius: 5px;
   width: 100%;
+  border: none;
+  outline: none;
+}
+
+.feature-button:focus {
+  outline: none;
+  border: 3px solid dodgerblue;
+  border-radius: 3px;
 }
 
 .text-container {
