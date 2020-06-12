@@ -5,6 +5,7 @@
 
 html {
   scroll-behavior: smooth;
+  scroll-padding-top: var(--nav-bar-height);
 }
 
 body {
@@ -60,6 +61,8 @@ nav {
 .nav-link {
   width: 100%;
   margin-right: 50px;
+  text-decoration: none;
+  color: white;
 }
 
 .underline-content {
