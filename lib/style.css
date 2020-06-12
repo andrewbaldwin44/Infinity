@@ -192,7 +192,7 @@ nav {
   justify-content: space-around;
   align-items: center;
   background: white;
-  height: 80vh;
+  min-height: 80vh;
   margin: 0 40px;
 }
 
@@ -238,7 +238,7 @@ nav {
 .text-container {
   box-sizing: border-box;
   color: white;
-  height: 65vh;
+  min-height: 65vh;
   padding-top: 40px;
 }
 
@@ -461,7 +461,6 @@ footer a {
   }
 
   .features {
-    height: 120vh;
     margin: 40px 0;
   }
 
@@ -552,11 +551,13 @@ footer a {
     border: none;
     width: 100%;
     left: 0;
+    top: var(--nav-bar-height);
+    padding-left: 0;
   }
 
   h1, .main-text-right h2 {
     border: none;
-    font-size: 2.5rem;
+    font-size: 1.2rem;
   }
 
   .text-grid {
@@ -564,11 +565,19 @@ footer a {
     justify-content: space-between;
     height: 20vh;
     line-height: 1.4;
-    font-size: 1.1rem;
+    font-size: 0.9rem;
   }
 
   .features {
-    height: 170vh;
+    min-height: 180vh;
+  }
+
+  .feature {
+    max-width: 250px;
+  }
+
+  .text-container {
+    height: calc(100vh - var(--nav-bar-height));
   }
 
   .text-container h2 {
@@ -627,6 +636,15 @@ footer a {
 
   .hover-text {
     font-size: 1.6em;
+  }
+
+  .register {
+    width: 100%;
+    padding-left: 10px;
+  }
+
+  .register input {
+    width: 310px;
   }
 
   footer {
