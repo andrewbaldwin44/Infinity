@@ -205,7 +205,7 @@ nav {
   grid-row-gap: 30px;
   text-align: center;
   width: 394px;
-  box-shadow: 0 0 10px 1px gray;
+  box-shadow: 2px 2px 12px 3px darkgray;
   padding: 20px 15px;
   border-radius: 7px;
 }
