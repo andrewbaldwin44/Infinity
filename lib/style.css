@@ -134,6 +134,7 @@ nav {
 }
 
 .rocket-bg {
+  object-fit: cover;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -329,6 +330,7 @@ nav {
 }
 
 .tile {
+  object-fit: cover;
   width: 101%;
   height: 101%;
 }
