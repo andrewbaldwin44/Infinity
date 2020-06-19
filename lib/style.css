@@ -52,6 +52,10 @@ nav {
   z-index: 100;
 }
 
+nav li {
+  list-style-type: none;
+}
+
 .nav-links {
   position: absolute;
   display: flex;
