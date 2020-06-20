@@ -188,7 +188,8 @@ nav li {
 
 .text-grid {
   display: flex;
-  font-size: 1.2rem;
+  font-size: 1.4rem;
+  line-height: 1.4;
 }
 
 .text-grid p:not(:last-child) {
